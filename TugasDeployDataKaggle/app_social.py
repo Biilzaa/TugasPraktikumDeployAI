@@ -8,7 +8,8 @@ from sklearn.preprocessing import StandardScaler
 @st.cache_data
 def prepare_knn():
     # Load dataset
-    df = pd.read_csv('app_social/Social_Network_Ads.csv') 
+   # Pastikan nama folder sesuai dengan yang ada di GitHub kamu
+    df = pd.read_csv('TugasDeployDataKaggle/Social_Network_Ads.csv')
     X = df[['Age', 'EstimatedSalary']]
     y = df['Purchased']
     
